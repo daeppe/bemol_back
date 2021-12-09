@@ -13,6 +13,7 @@ class TestUserModel(TestCase):
             first_name='Daniel',
             last_name='Epichin',
             email='d.pena@hotmail.com',
+            cep='29215040',
             complement='Apartamento em cima da garagem.',
             number_house='35',
             references='Em frente a auto escola Guarapari.'
@@ -54,6 +55,13 @@ class TestUserModel(TestCase):
         self.assertEqual(
             self.new_user.email,
             self.user_data['email']
+        )
+
+        # Teste do tipo do cep e saida correta
+        self.assertIsInstance(self.new_user.cep, str)
+        self.assertEqual(
+            self.new_user.cep,
+            self.user_data['cep']
         )
 
         # Teste do tipo do complement e saida correta

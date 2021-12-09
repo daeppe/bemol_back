@@ -14,6 +14,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
                 'first_name',
                 'last_name',
                 'email',
+                'cep',
                 'complement',
                 'number_house',
                 'references'
@@ -35,6 +36,7 @@ class GetIdAccountsSerializer(serializers.ModelSerializer):
                 'first_name',
                 'last_name',
                 'email',
+                'cep',
                 'complement',
                 'number_house',
                 'references'

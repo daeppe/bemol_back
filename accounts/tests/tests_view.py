@@ -13,6 +13,7 @@ class TestAccountView(APITestCase):
             password='123456',
             first_name='Daniel',
             last_name='Epichin',
+            cep='29215040',
             email='d.pena@hotmail.com',
             complement='Apartamento em cima da garagem.',
             number_house='35',
@@ -30,6 +31,7 @@ class TestAccountView(APITestCase):
             first_name='Daniel',
             last_name='Epichin',
             email='d.pena@hotmail.com',
+            cep='29215040',
             complement='Apartamento em cima da garagem.',
             number_house='35',
             references='Em frente a auto escola Guarapari.'
